@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap/js/bootstrap.min.js">
+    <title>myapp</title>
+</head>
+<style rel="stylesheet">
+    .links{
+        position: relative;
+        left: -20px;
+        text-decoration: none;
+        padding: 10px;
+       
+        background-color: greenyellow;
+    }
+     #backgd{
+        background-color: #AA4465;
+        /* background-image: url('../static/images/lake.jpg');
+        background-size: cover;
+        height: 400px; */
+        
+     } 
+    .search{font-size: 20px;
+        /* margin-top: 100px;
+        margin-right: 100px; */
+
+    }
+    #searchdiv{
+        align-content: center;
+    }
+    .foots{
+        background-color: #1C2321;
+    }
+    .footref{
+        text-decoration: none;
+    }
+    .foothead{
+        color: aqua;
+    }
+    div{
+        margin: 2px;
+    }
+    .list-group-item{
+        border: none;
+    }
+    .list-group{
+        border:1px solid black
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="background-color: #1C2321">
+            <div class="col">
+                <p>logo</p>
+
+            </div>
+            <div class="col">
+
+            </div>
+
+            <div class="col">
+                <a href="#">profile</a>
+                <a href="#">Dashboard</a>
+                <button type="button" class="btn btn-primary links" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    sign-in
+                  </button>
+                  <button type="button" class="btn btn-primary links" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Register
+                  </button>
+                
+                <button type="button" class="btn btn-primary links" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      anything for sale
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
+                            
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                                <div class="row md-6">
+                                    <div class="col md-3"><p><input type="text" placeholder="Email or Phone Number" name="username" class="form-control"></p></div>
+                                    
+                                </div>
+                                <div class="row md-6">
+                                    <div class="col md-3"><p><input type="password" placeholder="Enter Password" name="password" class="form-control"></p></div>
+
+                                </div>
+                                    <div><button type="button" class="btn btn-success">Login</button></div>
+                                <p style="text-align: center;">Don't have an account? <span style="color: green;">Register</span></p>
+                                
+                            </form>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div></button>
+            </div>
+        </div>
+        <div class="row" id="backgd">
+            <div class="col">
+                <!-- <img src="static/images/foodsupplies.jpeg"> -->
+            </div>
+            <div class="col" id="searchdiv">
+                <h3 class="search" style="text-align: center;">Find Anything Here</h3>
+                <input type="search" name="search" placeholder="i am looking for..." class="search form-control" >
+            </div>
+            <div class="col">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col md-3">
+                
+                    <h1>Category List</h1>
+                    <ul class="list-group">
+                      <li class="list-group-item"><img src="static/icons/car.png" style="height: 25px;">&nbsp;&nbsp;&nbsp;<a href="#">Category</a></li>
+                      <li class="list-group-item"><img src="static/icons/agriculture.png" style="height: 25px;">&nbsp;&nbsp;&nbsp;<a href="#" >Agricultural Produce</a></li>
+                      <li class="list-group-item"><img src="static/icons/animals.png" style="height: 25px;">&nbsp;&nbsp;&nbsp;<a href="#">Animals & pets</a>    </li>
+                      <li class="list-group-item">Category 4</li>
+                      <li class="list-group-item">Category 5</li>
+                    </ul>
+                
+                    
+                  
+            </div>
+            <div class="col md-9">
+                <div class="row">
+                <!-- carosel part -->
+                    <div class="col md-7"></div>
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p><img src="static/images/welder.jpeg" class="d-block w-100" alt="..."></p>
+                        </div>
+                        <div class="carousel-item">
+                            <p><img src="static/images/market_woman.jpeg" class="d-block w-100" alt="..."></p>
+                        </div>
+                        <div class="carousel-item">
+                            <p><img src="static/images/market_woman.jpeg" class="d-block w-100" alt="..."></p>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+                <div class="col md-2" style="background-color:#EC7D10;height: 30px;" >
+                    <h4 style="color:blue;text-align: center;" >POST ADS HERE FOR FREE!!!</h4>
+                </div>
+            {%block content%}
+
+
+            {%endblock%}
+
+
+        </div>
+        <!-- footer -->
+        <div class="row foots" >
+            
+            <div class="col md-2">
+                <h6 class="foothead">About us</h6>
+                <p><a href="#" class="footref">About MyArea</a></p>
+                <p><a href="#" class="footref">We are Hiring</a></p>
+                <p><a href="#" class="footref">Terms & conditions</a></p>
+                <p><a href="#" class="footref">Privacy Policy </a></p>
+                <p><a href="#" class="footref">MyArea Blog</a></p>
+            </div>
+            <div class="col md-2">
+                <h6 class="foothead">Customer Service</h6>
+                <p><a href="#" class="footref">Help Center</a></p>
+                <p><a href="#" class="footref">Report Abuse</a></p>
+                <p><a href="#" class="footref">Open Case</a></p>
+                <p><a href="#" class="footref">Policies & Rules </a></p>
+                <p><a href="#" class="footref">Get Paid for your feedback</a></p>
+            </div>
+            <div class="col md-2 ">
+                <h6 class="foothead">Customer Service</h6>
+                <p><a href="#" class="footref">Help Center</a></p>
+                <p><a href="#" class="footref">Report Abuse</a></p>
+                <p><a href="#" class="footref">Open Case</a></p>
+                <p><a href="#" class="footref">Policies & Rules </a></p>
+                <p><a href="#" class="footref">Get Paid for your feedback</a></p>
+            </div>
+                       
+        </div>
+    </div>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
